@@ -20,13 +20,14 @@ int palindrome(char str[]) { //defining the function
 int main() {
 	printf("Input: ");
     	char str[100];
-    	scanf("%s", str); //taking input for string
+    	fgets(str,sizeof(str),stdin); //taking input for string
+	str[strlen(str)-1]='\0';
 
     	if (palindrome(str)) {
 	printf("Output: Palindrome\n");
     	} else {
         printf("Output: Not a Palindrome\n");
-    	}
+    	} //giving req ouput
 
     	return 0;
 }
