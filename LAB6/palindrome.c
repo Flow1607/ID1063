@@ -18,7 +18,7 @@ int palindrome(char str[]) { //defining the function
 }
 
 int main() {
-	printf("Input: ");
+	printf("Input:");
     	char str[100];
     	fgets(str,sizeof(str),stdin); //taking input for string
 	str[strlen(str)-1]='\0';
