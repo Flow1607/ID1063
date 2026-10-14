@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-struct City {
+typedef struct{
     char name[50];
     char country[50];
     char population[50];  // Stored directly as text
     double latitude;
     double longitude;
-};
+}City;
 
 int main(void) {
-    struct City c;
+	City c;
 
     printf("Enter city name: ");
     scanf(" %49[^\n]", c.name);
